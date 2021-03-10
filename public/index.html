@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body><div class="background">
+    <div class="UploadContainer">
+    <p><h3>Upload Student:</h3>(Name, Gender, SAT, ACT, GPA unweighted, GPA weighted, Major, Age, Race, Country, City, State, top sport, top activity, Essay):</p>
+    <textarea id="studentText" rows="3" cols="50"></textarea>
+    <button type="button" id="studentSubmit">submit student</button><br>
+
+    </div>
+    <div class="sliders">
+      <div class="slidecontainer">
+        <p id="testscoreslide">This slider toggles a composite for SAT, ACT, and GPA: (0 is low, 100 is high)</p>
+        <input type="range" min="0" max="100" value="50" class="slider" id="myRange" oninput="this.nextElementSibling.value = this.value">
+        <output name="result">50</output>
+      </div>
+      <div class="slidecontainer">
+        <p id="testscoreslide">This slider toggles a composite for gender, age, location, and race: (0 is highly skewed, 100 is very balanced)</p>
+        <input type="range" min="0" max="100" value="50" class="slider" id="myRange" oninput="this.nextElementSibling.value = this.value">
+        <output name="result">50</output>
+      </div>
+      <div class="slidecontainer">
+        <p id="testscoreslide">This slider toggles a composite for major and anticipated on campus activities: (0 is highly skewed, 100 is very balanced)</p>
+        <input type="range" min="0" max="100" value="50" class="slider" id="myRange" oninput="this.nextElementSibling.value = this.value">
+        <output name="result">50</output>
+      </div>
+      <div class="slidecontainer">
+        <p id="testscoreslide">This slider toggles extraversion/intraversion: (0 is very extraverted, 100 is very intraverted)</p>
+        <input type="range" min="0" max="100" value="50" class="slider" id="myRange" oninput="this.nextElementSibling.value = this.value">
+        <output name="result">50</output>
+      </div>
+      <div class="slidecontainer">
+        <p id="testscoreslide">This slider toggles sensing/intuitive: (0 is very sensing, 100 is very intuitive)</p>
+        <input type="range" min="0" max="100" value="50" class="slider" id="myRange" oninput="this.nextElementSibling.value = this.value">
+        <output name="result">50</output>
+      </div>
+      <div class="slidecontainer">
+        <p id="testscoreslide">This slider toggles thinking/feeling: (0 is very thinking, 100 is very feeling)</p>
+        <input type="range" min="0" max="100" value="50" class="slider" id="myRange" oninput="this.nextElementSibling.value = this.value">
+        <output name="result">50</output>
+      </div>
+      <div class="slidecontainer">
+        <p id="testscoreslide">This slider toggles judging/perceving: (0 is very judging, 100 is very perceving)</p>
+        <input type="range" min="0" max="100" value="50" class="slider" id="myRange" oninput="this.nextElementSibling.value = this.value">
+        <output name="result">50</output>
+      </div>
+      <div class="slidecontainernumkids">
+        <p id="testscoreslide">This slider toggles class size:</p>
+        <input type="range" min="20" max="10000" value="20" class="slider" id="myRange" oninput="this.nextElementSibling.value = this.value">
+        <output name="result">20</output>
+        <p>Before running the simulation, make sure you have submitted at least 20 students</p>
+      </div>
+    </div>
+    <div class="runthesim">
+      <button type="button" id="runSimulation">Build Class</button><br>
+    </div>
+  </div>
+    <!-- The core Firebase JS SDK is always required and must be listed first -->
+    <script src="/__/firebase/8.2.10/firebase-app.js"></script>
+
+    <!-- TODO: Add SDKs for Firebase products that you want to use
+         https://firebase.google.com/docs/web/setup#available-libraries -->
+    <script src="https://www.gstatic.com/firebasejs/8.2.5/firebase-firestore.js"></script>
+    <script src="/__/firebase/8.2.10/firebase-analytics.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.2.5/firebase-storage.js"></script>
+    <!-- Initialize Firebase -->
+    <script src="/__/firebase/init.js"></script>
+    <script>
+    firebase.analytics();
+    const db=firebase.firestore();
+    const storage = firebase.storage();
+    </script>
+    <script src="scripts/index.js"></script>
+  </body>
+</html>

@@ -1,0 +1,46 @@
+body{
+  margin: 0;
+  height: 100%;
+  width: 100%;
+  background-image: linear-gradient(to bottom, #686868, #282828);
+}
+
+.UploadContainer{
+  top: 50%;
+  margin-top: 2%;
+  margin-bottom: 2%;
+  left: 50%;
+  width: 400px;
+  margin-left: -200px;
+  position: relative;
+}
+
+.background{
+  color: white;
+  margin-top: 5%;
+  margin-right: 20%;
+  margin-left: 20%;
+  border-radius: 25px;
+  border: 2px solid black;
+}
+
+.sliders{
+  border-top: 1px solid grey;
+  margin-top: 20px;
+  margin-left: 25%;
+  margin-right: 25%;
+  margin-bottom: 20px;
+}
+.sliders div{
+  margin-top: 10px;
+}
+.sliders input{
+  width: 80%;
+}
+
+.runthesim button{
+  margin-left: 25%;
+  margin-right: 25%;
+  margin-bottom: 15px;
+  width: 50%;
+}
