@@ -34,8 +34,8 @@ body{
 .sliders div{
   margin-top: 10px;
 }
-.sliders input{
-  width: 80%;
+.sliders .slider{
+  width: 70%;
 }
 
 .runthesim button{
