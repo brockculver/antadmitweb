@@ -3,13 +3,18 @@ import random as r
 import numpy as np
 from numpy import random
 data=[]
-count = 100;
+count = 600;
 degrees=["business","education","health","engineering","art","communications","history","natural science"]
 states=["Alabama","Alaska","Arizona","Arkansas","California","Colorado","Connecticut","Delaware","Florida","Georgia","Hawaii","Idaho","Illinois","Indiana","Iowa","Kansas","Kentucky","Louisiana","Maine","Maryland","Massachusetts","Michigan","Minnesota","Mississippi","Missouri","Montana","Nebraska","Nevada","New Hampshire","New Jersey","New Mexico","New York","North Carolina","North Dakota","Ohio","Oklahoma","Oregon","Pennsylvania","Rhode Island","South Carolina","South Dakota","Tennessee","Texas","Utah","Vermont","Virginia","Washington","West Virginia","Wisconsin","Wyoming"]
 
 i=0
+file1=open(r"C:\Users\brock\antadmitweb\public\scripts\essays.txt","r+")
+essays=file1.read();
+essays=essays.split("999888999")
 
 while i<count:
+    #makes the essay for the student
+    essay = essays[i]
     # assigns gender
     j=r.randint(0,1)
     if j==0:
@@ -142,6 +147,14 @@ while i<count:
     gpa=round(gpa,2)
     gpaw=round(gpa+gpa*.05*np.random.normal(1,.15)*r.randint(0,1),2)
 
-    data=data+[[names.get_full_name(gender=gend), gend, sat, act, gpa, gpaw, degree, age, race, country, town, state, sport]]
+    data=data+[[names.get_full_name(gender=gend), gend, sat, act, gpa, gpaw, degree, age, race, country, town, state, sport,"-",essay]]
     i=i+1
 print(data)
+
+file2=open(r"C:\Users\brock\antadmitweb\public\scripts\studentInputData.txt","w+")
+for student in data:
+    for item in student:
+        file2.write(str(item))
+        if(len(str(item))<=30):
+            file2.write(",")
+    file2.write("\n")

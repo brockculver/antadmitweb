@@ -5,55 +5,107 @@
     <title></title>
     <link rel="stylesheet" href="style.css">
   </head>
-  <body><div class="background">
-    <div class="UploadContainer">
+  <body>
+    <nav>
+      <a href="upload.html">Upload</a>
+    </nav>
+    <div class="background">
+    <!-- <div class="UploadContainer">
     <p><h3>Upload Student:</h3>(Name, Gender, SAT, ACT, GPA unweighted, GPA weighted, Major, Age, Race, Country, City, State, top sport, top activity, Essay):</p>
     <textarea id="studentText" rows="3" cols="50"></textarea>
     <button type="button" id="studentSubmit">submit student</button><br>
 
-    </div>
+    </div> -->
     <div class="sliders">
+      <h3>The Database has thousands of students to make your incoming class out of, and more can be added by going to the upload student tab<br><br><u>Get started building:</u></h3>
       <div class="slidecontainer">
-        <p id="testscoreslide">This slider toggles a composite for SAT, ACT, and GPA: (0 is low, 100 is high)</p>
-        <input type="range" min="0" max="100" value="50" class="slider" id="myRange" oninput="this.nextElementSibling.value = this.value">
-        <output name="result">50</output>
+        <p id="testscoreslide">This slider toggles a composite for SAT, ACT, and GPA: (use SAT score as benchmark) | the box on the right is priority of the toggle, 1 is top, 9 is lowest</p>
+        <input type="range" min="400" max="1600" value="800" class="slider" id="myRange" oninput="this.nextElementSibling.value = this.value">
+        <output name="result">800</output>
         <input type="number" id="quantity" name="quantity" min="1" max="9">
       </div>
       <div class="slidecontainer">
         <p id="testscoreslide">This slider toggles a composite for gender, age, location, and race: (0 is highly skewed, 100 is very balanced)</p>
         <input type="range" min="0" max="100" value="50" class="slider" id="myRange" oninput="this.nextElementSibling.value = this.value">
         <output name="result">50</output>
+        <input type="number" id="quantity" name="quantity" min="1" max="9">
       </div>
       <div class="slidecontainer">
-        <p id="testscoreslide">This slider toggles a composite for major and anticipated on campus activities: (0 is highly skewed, 100 is very balanced)</p>
+        <p id="testscoreslide">This slider toggles sports: (0 is no student athletes, 100 is as many as possible)</p>
         <input type="range" min="0" max="100" value="50" class="slider" id="myRange" oninput="this.nextElementSibling.value = this.value">
         <output name="result">50</output>
+        <input type="number" id="quantity" name="quantity" min="1" max="9">
+      </div>
+      <div class="slidecontainer">
+        <p id="testscoreslide">This slider toggles a composite for major: (0 is highly skewed, 100 is very balanced)</p>
+        <input type="range" min="0" max="100" value="50" class="slider" id="myRange" oninput="this.nextElementSibling.value = this.value">
+        <output name="result">50</output>
+        <input type="number" id="quantity" name="quantity" min="1" max="9">
+<!-- "business","education","health","engineering","art","communications","history","natural science" -->
+              <p id="testscoreslide">-skew to business</p>
+              <input type="range" min="0" max="100" value="50" class="slider" id="myRange" oninput="this.nextElementSibling.value = this.value">
+              <output name="result">50</output>
+
+              <p id="testscoreslide">-skew to education</p>
+              <input type="range" min="0" max="100" value="50" class="slider" id="myRange" oninput="this.nextElementSibling.value = this.value">
+              <output name="result">50</output>
+
+              <p id="testscoreslide">-skew to health</p>
+              <input type="range" min="0" max="100" value="50" class="slider" id="myRange" oninput="this.nextElementSibling.value = this.value">
+              <output name="result">50</output>
+
+              <p id="testscoreslide">-skew to engineering</p>
+              <input type="range" min="0" max="100" value="50" class="slider" id="myRange" oninput="this.nextElementSibling.value = this.value">
+              <output name="result">50</output>
+
+              <p id="testscoreslide">-skew to art</p>
+              <input type="range" min="0" max="100" value="50" class="slider" id="myRange" oninput="this.nextElementSibling.value = this.value">
+              <output name="result">50</output>
+
+              <p id="testscoreslide">-skew to communications</p>
+              <input type="range" min="0" max="100" value="50" class="slider" id="myRange" oninput="this.nextElementSibling.value = this.value">
+              <output name="result">50</output>
+
+              <p id="testscoreslide">-skew to history</p>
+              <input type="range" min="0" max="100" value="50" class="slider" id="myRange" oninput="this.nextElementSibling.value = this.value">
+              <output name="result">50</output>
+
+              <p id="testscoreslide">-skew to natural science</p>
+              <input type="range" min="0" max="100" value="50" class="slider" id="myRange" oninput="this.nextElementSibling.value = this.value">
+              <output name="result">50</output>
+              <p id="testscoreslide">-------------------------------------------------------------------</p>
+
       </div>
       <div class="slidecontainer">
         <p id="testscoreslide">This slider toggles extraversion/intraversion: (0 is very extraverted, 100 is very intraverted)</p>
         <input type="range" min="0" max="100" value="50" class="slider" id="myRange" oninput="this.nextElementSibling.value = this.value">
         <output name="result">50</output>
+        <input type="number" id="quantity" name="quantity" min="1" max="9">
       </div>
       <div class="slidecontainer">
         <p id="testscoreslide">This slider toggles sensing/intuitive: (0 is very sensing, 100 is very intuitive)</p>
         <input type="range" min="0" max="100" value="50" class="slider" id="myRange" oninput="this.nextElementSibling.value = this.value">
         <output name="result">50</output>
+        <input type="number" id="quantity" name="quantity" min="1" max="9">
       </div>
       <div class="slidecontainer">
         <p id="testscoreslide">This slider toggles thinking/feeling: (0 is very thinking, 100 is very feeling)</p>
         <input type="range" min="0" max="100" value="50" class="slider" id="myRange" oninput="this.nextElementSibling.value = this.value">
         <output name="result">50</output>
+        <input type="number" id="quantity" name="quantity" min="1" max="9">
       </div>
       <div class="slidecontainer">
         <p id="testscoreslide">This slider toggles judging/perceving: (0 is very judging, 100 is very perceving)</p>
         <input type="range" min="0" max="100" value="50" class="slider" id="myRange" oninput="this.nextElementSibling.value = this.value">
         <output name="result">50</output>
+        <input type="number" id="quantity" name="quantity" min="1" max="9">
       </div>
       <div class="slidecontainernumkids">
         <p id="testscoreslide">This slider toggles class size:</p>
-        <input type="range" min="20" max="10000" value="20" class="slider" id="myRange" oninput="this.nextElementSibling.value = this.value">
+        <input type="range" min="20" max="1000" value="20" class="slider" id="myRange" oninput="this.nextElementSibling.value = this.value">
         <output name="result">20</output>
-        <p>Before running the simulation, make sure you have submitted at least 20 students</p>
+        <input type="number" id="quantity" name="quantity" min="1" max="9">
+        <p>Before running the simulation, make sure no priority is repeated, each field must be prioritized 1-9</p>
       </div>
     </div>
     <div class="runthesim">

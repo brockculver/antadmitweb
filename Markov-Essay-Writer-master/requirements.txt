@@ -1,6 +1,2 @@
-names
-numpy
-pymorphy2
-plumbum
 markovify==0.7.1
 Unidecode==1.0.23
