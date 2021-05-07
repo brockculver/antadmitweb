@@ -19,99 +19,101 @@
     <div class="sliders">
       <h3>The Database has thousands of students to make your incoming class out of, and more can be added by going to the upload student tab<br><br><u>Get started building:</u></h3>
       <div class="slidecontainer">
-        <p id="testscoreslide">This slider toggles a composite for SAT, ACT, and GPA: (use SAT score as benchmark) | the box on the right is priority of the toggle, 1 is top, 9 is lowest</p>
-        <input type="range" min="400" max="1600" value="800" class="slider" id="myRange" oninput="this.nextElementSibling.value = this.value">
+        <p id="testscoreslide">This slider toggles a composite for SAT, ACT, and GPA: (use SAT score as benchmark) | the box on the right is priority of the toggle, 9 is top, 1 is lowest</p>
+        <input type="range" min="400" max="1600" value="800" class="slider" id="scoretest" oninput="this.nextElementSibling.value = this.value">
         <output name="result">800</output>
-        <input type="number" id="quantity" name="quantity" min="1" max="9">
+        <input type="number" id="testw" name="quantity" min="1" max="9">
       </div>
       <div class="slidecontainer">
         <p id="testscoreslide">This slider toggles a composite for gender, age, location, and race: (0 is highly skewed, 100 is very balanced)</p>
-        <input type="range" min="0" max="100" value="50" class="slider" id="myRange" oninput="this.nextElementSibling.value = this.value">
+        <input type="range" min="0" max="100" value="50" class="slider" id="scorediversity" oninput="this.nextElementSibling.value = this.value">
         <output name="result">50</output>
-        <input type="number" id="quantity" name="quantity" min="1" max="9">
+        <input type="number" id="diversityw" name="quantity" min="1" max="9">
       </div>
       <div class="slidecontainer">
         <p id="testscoreslide">This slider toggles sports: (0 is no student athletes, 100 is as many as possible)</p>
-        <input type="range" min="0" max="100" value="50" class="slider" id="myRange" oninput="this.nextElementSibling.value = this.value">
+        <input type="range" min="0" max="100" value="50" class="slider" id="scoresport" oninput="this.nextElementSibling.value = this.value">
         <output name="result">50</output>
-        <input type="number" id="quantity" name="quantity" min="1" max="9">
+        <input type="number" id="sportw" name="quantity" min="1" max="9">
       </div>
       <div class="slidecontainer">
         <p id="testscoreslide">This slider toggles a composite for major: (0 is highly skewed, 100 is very balanced)</p>
-        <input type="range" min="0" max="100" value="50" class="slider" id="myRange" oninput="this.nextElementSibling.value = this.value">
+        <input type="range" min="0" max="100" value="50" class="slider" id="scoremajor" oninput="this.nextElementSibling.value = this.value">
         <output name="result">50</output>
-        <input type="number" id="quantity" name="quantity" min="1" max="9">
+        <input type="number" id="majorw" name="quantity" min="1" max="9">
 <!-- "business","education","health","engineering","art","communications","history","natural science" -->
               <p id="testscoreslide">-skew to business</p>
-              <input type="range" min="0" max="100" value="50" class="slider" id="myRange" oninput="this.nextElementSibling.value = this.value">
+              <input type="range" min="0" max="100" value="50" class="slider" id="scorebiz" oninput="this.nextElementSibling.value = this.value">
               <output name="result">50</output>
 
               <p id="testscoreslide">-skew to education</p>
-              <input type="range" min="0" max="100" value="50" class="slider" id="myRange" oninput="this.nextElementSibling.value = this.value">
+              <input type="range" min="0" max="100" value="50" class="slider" id="scoreed" oninput="this.nextElementSibling.value = this.value">
               <output name="result">50</output>
 
               <p id="testscoreslide">-skew to health</p>
-              <input type="range" min="0" max="100" value="50" class="slider" id="myRange" oninput="this.nextElementSibling.value = this.value">
+              <input type="range" min="0" max="100" value="50" class="slider" id="scorehealth" oninput="this.nextElementSibling.value = this.value">
               <output name="result">50</output>
 
               <p id="testscoreslide">-skew to engineering</p>
-              <input type="range" min="0" max="100" value="50" class="slider" id="myRange" oninput="this.nextElementSibling.value = this.value">
+              <input type="range" min="0" max="100" value="50" class="slider" id="scoreeng" oninput="this.nextElementSibling.value = this.value">
               <output name="result">50</output>
 
               <p id="testscoreslide">-skew to art</p>
-              <input type="range" min="0" max="100" value="50" class="slider" id="myRange" oninput="this.nextElementSibling.value = this.value">
+              <input type="range" min="0" max="100" value="50" class="slider" id="scoreart" oninput="this.nextElementSibling.value = this.value">
               <output name="result">50</output>
 
               <p id="testscoreslide">-skew to communications</p>
-              <input type="range" min="0" max="100" value="50" class="slider" id="myRange" oninput="this.nextElementSibling.value = this.value">
+              <input type="range" min="0" max="100" value="50" class="slider" id="scorecomm" oninput="this.nextElementSibling.value = this.value">
               <output name="result">50</output>
 
               <p id="testscoreslide">-skew to history</p>
-              <input type="range" min="0" max="100" value="50" class="slider" id="myRange" oninput="this.nextElementSibling.value = this.value">
+              <input type="range" min="0" max="100" value="50" class="slider" id="scorehistory" oninput="this.nextElementSibling.value = this.value">
               <output name="result">50</output>
 
               <p id="testscoreslide">-skew to natural science</p>
-              <input type="range" min="0" max="100" value="50" class="slider" id="myRange" oninput="this.nextElementSibling.value = this.value">
+              <input type="range" min="0" max="100" value="50" class="slider" id="scoresci" oninput="this.nextElementSibling.value = this.value">
               <output name="result">50</output>
               <p id="testscoreslide">-------------------------------------------------------------------</p>
 
       </div>
       <div class="slidecontainer">
         <p id="testscoreslide">This slider toggles extraversion/intraversion: (0 is very extraverted, 100 is very intraverted)</p>
-        <input type="range" min="0" max="100" value="50" class="slider" id="myRange" oninput="this.nextElementSibling.value = this.value">
+        <input type="range" min="0" max="100" value="50" class="slider" id="scoreextra" oninput="this.nextElementSibling.value = this.value">
         <output name="result">50</output>
-        <input type="number" id="quantity" name="quantity" min="1" max="9">
+        <input type="number" id="extraw" name="quantity" min="1" max="9">
       </div>
       <div class="slidecontainer">
         <p id="testscoreslide">This slider toggles sensing/intuitive: (0 is very sensing, 100 is very intuitive)</p>
-        <input type="range" min="0" max="100" value="50" class="slider" id="myRange" oninput="this.nextElementSibling.value = this.value">
+        <input type="range" min="0" max="100" value="50" class="slider" id="scoresense" oninput="this.nextElementSibling.value = this.value">
         <output name="result">50</output>
-        <input type="number" id="quantity" name="quantity" min="1" max="9">
+        <input type="number" id="sensew" name="quantity" min="1" max="9">
       </div>
       <div class="slidecontainer">
         <p id="testscoreslide">This slider toggles thinking/feeling: (0 is very thinking, 100 is very feeling)</p>
-        <input type="range" min="0" max="100" value="50" class="slider" id="myRange" oninput="this.nextElementSibling.value = this.value">
+        <input type="range" min="0" max="100" value="50" class="slider" id="scorethink" oninput="this.nextElementSibling.value = this.value">
         <output name="result">50</output>
-        <input type="number" id="quantity" name="quantity" min="1" max="9">
+        <input type="number" id="thinkw" name="quantity" min="1" max="9">
       </div>
       <div class="slidecontainer">
         <p id="testscoreslide">This slider toggles judging/perceving: (0 is very judging, 100 is very perceving)</p>
-        <input type="range" min="0" max="100" value="50" class="slider" id="myRange" oninput="this.nextElementSibling.value = this.value">
+        <input type="range" min="0" max="100" value="50" class="slider" id="scorejudge" oninput="this.nextElementSibling.value = this.value">
         <output name="result">50</output>
-        <input type="number" id="quantity" name="quantity" min="1" max="9">
+        <input type="number" id="judgew" name="quantity" min="1" max="9">
       </div>
       <div class="slidecontainernumkids">
         <p id="testscoreslide">This slider toggles class size:</p>
-        <input type="range" min="20" max="1000" value="20" class="slider" id="myRange" oninput="this.nextElementSibling.value = this.value">
+        <input type="range" min="20" max="1000" value="20" class="slider" id="scoresize" oninput="this.nextElementSibling.value = this.value">
         <output name="result">20</output>
-        <input type="number" id="quantity" name="quantity" min="1" max="9">
+        <input type="number" id="sizew" name="quantity" min="1" max="9">
         <p>Before running the simulation, make sure no priority is repeated, each field must be prioritized 1-9</p>
       </div>
     </div>
     <div class="runthesim">
-      <button type="button" id="runSimulation">Build Class</button><br>
+      <button type="button" id="runSimulation"onclick='simulate();'>Build Class</button><br>
     </div>
   </div>
+
+
     <!-- The core Firebase JS SDK is always required and must be listed first -->
     <script src="/__/firebase/8.2.10/firebase-app.js"></script>
 
@@ -127,6 +129,112 @@
     const db=firebase.firestore();
     const storage = firebase.storage();
     </script>
+
+    <!-- when simulation is run, use this script -->
+    <script>
+    var table='<tr><td>#</td><td>Name</td><td>Gender</td><td>GPA weighted</td><td>GPA unweighted</td><td>Intended Major</td><td>ACT</td><td>SAT</td><td>Age</td><td>State</td><td>Country</td><td>Race</td><td>Sport</td><td>Essay</td></tr>';
+
+    function simulate() {
+
+      var test = [document.querySelector('#scoretest').value,document.querySelector('#testw').value/45];
+      var size = [document.querySelector('#scoresize').value,document.querySelector('#sizew').value/45];
+      var sport = [document.querySelector('#scoresport').value,document.querySelector('#sportw').value/45];
+      var diversity = [document.querySelector('#scorediversity').value,document.querySelector('#diversityw').value/45];
+      var major = [document.querySelector('#scoremajor').value,document.querySelector('#majorw').value/45];
+
+      var amtjp = [document.querySelector('#scorejudge').value,document.querySelector('#judgew').value/45];
+      var amttf = [document.querySelector('#scorethink').value,document.querySelector('#thinkw').value/45];
+      var amtsi = [document.querySelector('#scoresense').value,document.querySelector('#sensew').value/45];
+      var amtei = [document.querySelector('#scoreextra').value,document.querySelector('#extraw').value/45];
+
+      //count amount of students added to the table
+      var numadded=0;
+
+      //set baseline number f student count; can change later
+      var row=scoresize.value;
+
+      //function to query students average gpa, sat, act
+      var statTst= Math.ceil(test[0] / 10) * 10;
+      var fairSAT=statTst-50;
+      var satRange=[];
+      for (var i = 0; i <10; i+=1) {
+        satRange[i]=(fairSAT+10*i).toString();
+      }
+      var num2add=row;
+      var docRef = db.collection("StudentsByBrock");
+      var query = docRef.where("sat", "in", satRange);
+
+      query.get().then((querySnapshot) => {
+      querySnapshot.forEach((doc) => {
+        if (numadded<num2add) {
+          table+='<tr>';
+
+          table+='<td>';
+          table+=numadded.toString();
+          table+='</td>';
+
+          table+='<td>';
+          table+=doc.get("name").toString();
+          table+='</td>';
+
+          table+='<td>';
+          table+=doc.get("gender").toString();
+          table+='</td>';
+
+          table+='<td>';
+          table+=doc.get("GPAweighted").toString();
+          table+='</td>';
+
+          table+='<td>';
+          table+=doc.get("GPAunweighted").toString();
+          table+='</td>';
+
+          table+='<td>';
+          table+=doc.get("Intendedmajor").toString();
+          table+='</td>';
+
+          table+='<td>';
+          table+=doc.get("act").toString();
+          table+='</td>';
+
+          table+='<td>';
+          table+=doc.get("sat").toString();
+          table+='</td>';
+
+          table+='<td>';
+          table+=doc.get("age").toString();
+          table+='</td>';
+
+          table+='<td>';
+          table+=doc.get("locationState").toString();
+          table+='</td>';
+
+          table+='<td>';
+          table+=doc.get("locationCountry").toString();
+          table+='</td>';
+
+          table+='<td>';
+          table+=doc.get("race").toString();
+          table+='</td>';
+
+          table+='<td>';
+          table+=doc.get("topSport").toString();
+          table+='</td>';
+
+          table+='<td>';
+          table+="find their essay on your database";
+          table+='</td>';
+
+          table+='</tr>';
+          numadded+=1;
+        }
+      });
+  }).then((e)=>{
+    document.write('<table border ="1">'+table+'</table>');
+  });
+}
+    </script>
+
     <script src="scripts/index.js"></script>
   </body>
 </html>
